@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8">
+    <title>Nikolaj Kaluderovic &mdash; CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-alt: #1e293b;
+            --text: #0f172a;
+            --muted: #475569;
+            --accent: #2563eb;
+            --surface: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(160deg, var(--bg) 0%, var(--bg-alt) 60%, #111827 100%);
+            color: var(--text);
+        }
+
+        header {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 32px 24px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            align-items: center;
+            color: #fff;
+        }
+
+        header .identity {
+            flex: 1 1 320px;
+        }
+
+        header h1 {
+            font-size: clamp(2.4rem, 5vw, 3.5rem);
+            margin: 0 0 12px;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            margin: 0 0 24px;
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: #cbd5f5;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+        }
+
+        header ul li {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        header ul span.label {
+            font-weight: 600;
+            width: 80px;
+        }
+
+        header .portrait {
+            flex: 0 0 220px;
+            max-width: 240px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 24px 48px rgba(15, 23, 42, 0.45);
+            border: 3px solid rgba(255, 255, 255, 0.12);
+        }
+
+        header .portrait img {
+            width: 100%;
+            display: block;
+        }
+
+        main {
+            background: #fff;
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
+            margin-top: -24px;
+            padding: 56px 24px 96px;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: grid;
+            gap: 48px;
+        }
+
+        section {
+            display: grid;
+            gap: 16px;
+        }
+
+        section h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        .summary p,
+        .body-text {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .two-column {
+            display: grid;
+            gap: 24px;
+        }
+
+        @media (min-width: 900px) {
+            .two-column {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 24px 28px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+            display: grid;
+            gap: 12px;
+        }
+
+        .card h4 {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .card span.meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .skills-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        @media (min-width: 600px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(37, 99, 235, 0.12);
+            color: var(--accent);
+            font-weight: 500;
+            margin: 4px 6px 0 0;
+        }
+
+        .actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .actions a {
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+        }
+
+        footer {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 32px 24px 56px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="identity">
+            <h1>Nikolaj Kaluđerović</h1>
+            <h2>C# .NET programer i student matematike i računarskih nauka</h2>
+            <ul>
+                <li><span class="label">Telefon</span><span>+382 67 161 007</span></li>
+                <li><span class="label">Email</span><span><a href="mailto:koljakalud@gmail.com" style="color:#fff;">koljakalud@gmail.com</a></span></li>
+                <li><span class="label">Lokacija</span><span>Podgorica, Crna Gora</span></li>
+            </ul>
+            <div class="actions">
+            </div>
+        </div>
+        <div class="portrait">
+            <img src="photo.jpg" alt="Nikolaj Kaluđerović">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+                <section>
+                    <h3>C# i AI projekti</h3>
+                    <div class="card">
+                        <p class="body-text">
+                            Bavim se projektovanjem i razvojem backend sistema u C# .NET-u: dizajniram REST API servise, pišem poslovnu logiku, povezujem aplikacije sa PostgreSQL bazama i vodim dokumentaciju kroz Swagger. Posebno obraćam pažnju na sintaktičku ispravnost i jasnoću koda — trudim se da kod bude čitko i onda strukturirano napisan, sa doslednim stilom i dobrim imenovanjem, kako bi bio lako održiv i razumljiv timu.
+                        </p>
+                        <p class="body-text">
+                            Paralelno gradim AI asistente i chat botove. Uz ChatGPT API i druge AI servise kreiram prilagođene konverzacione tokove, automatizujem korisničku podršku, integrišem botove sa internim sistemima i uvodim pametne automatizacije koje štede vrijeme i unapređuju iskustvo korisnika.
+                        </p>
+                    </div>
+                </section>
+
+                        <section class="summary">
+                <h3>Nešto o meni</h3>
+                <p class="body-text">
+                    Od malena pokazujem veliku radoznalost. Sa osam godina otkrio sam radio elektroniku, napravio prvi elektro-šoker i laboratorijsko napajanje, a zatim složenije projekte poput FM prijenosne radio stanice, detektora metala i inkubatora... Ta energija me je dovela u radio klub za srednjoškolce još prije nego što sam napunio 10 godina. Posebno me fascinirala astrofizika i beskrajnost kosmosa — sateliti, galaksije, crne rupe i sve što se krije u dubinama svemira.
+                </p>
+                <p class="body-text">
+                    Arduino me je poveo u svijet programiranja. Od mikrokontrolera prešao sam na web, JavaScript igre, takmičarski C++, 2D animaciju, 3D modelovanje i 3D štampu. Danas najviše vremena posvećujem backend razvoju u C# .NET okruženju.
+                </p>
+                <p class="body-text">
+                    Volim da istražujem različite oblasti: matematiku, glumu, šah i sportove. Nastupao sam sa crnogorskim pozorištem u Italiji, a više godina vodio sam dječje TV emisije na RTCG-u ("Borko filmadžija", "Dječje popodne"...)
+                </p>
+                <p class="body-text">
+                    Borilačke vještine prate me od osnovne škole &mdash; aikido, judo, a kasnije boks. Tokom razmjene u Teksasu takmičio sam se na Golden Gloves i Louisiana State Games turnirima, igrao fudbal za školu, dobio radio technician license, i osnovao Van TX Chess Club koji i danas okuplja šahiste svakog petka i koji je bio oficijalno sponzorisan od strane chess.com, najveće šahovske organizacije na svijetu. Takođe sam pomagao u održavanju šahovskih turnira u istočnom Teksasu i na kraju programa razmjene dobio diplomu nagradu za društveni doprinos zajednici.
+                </p>
+                <p class="body-text">
+                    Aktivno učestvujem na takmičenjima iz oblasti programiranja i tehnologije. Osvojio sam prvo mjesto na DABAR takmičenju, ušao u prva tri mjesta na CanSat takmičenju, kao i na NASA Hackathon takmičenju... Ova iskustva mi omogućavaju da testiram svoje znanje u realnim uslovima, uči od drugih takmičara i kontinuirano unapređujem svoje tehničke vještine kroz praktične izazove.
+                </p>
+                <p class="body-text">
+                    U školi sam uvijek bio među najboljim učenicima, najviše privučen fizikom i matematikom. Inspirišu me djela Žila Verna i Perelmanova "Zabavna fizika" koja me je upoznala sa mehanikom, gravitacijom i kvantnom fizikom.
+                </p>
+            </section>
+
+            <section>
+                <h3>Radno iskustvo</h3>
+                <div class="card">
+                    <h4>Junior C# .NET Developer &mdash; Tekhnograd Solutions</h4>
+                    <span class="meta">Remote &middot; februar 2024 &ndash; jul 2024</span>
+                    <p class="body-text">
+                        Radio u outsourcing timu na logistickim i fintech aplikacijama koristeci ASP.NET Core, EF Core, PostgreSQL, Redis i Vue 3.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Obrazovanje</h3>
+                <div class="card">
+                    <h4>Univerzitet Crne Gore &mdash; Prirodno-matematicki fakultet</h4>
+                    <span class="meta">Studije Matematike i racunarskih nauka (B smjer) &middot; 2025 &ndash; sada</span>
+                </div>
+                <div class="card">
+                    <h4>Budvanska gimnazija</h4>
+                    <span class="meta">Srednja škola &middot; 2024 &ndash; 2025</span>
+                </div>
+                <div class="card">
+                    <h4>Van High School, Texas, SAD &mdash; ucenik razmjene</h4>
+                    <span class="meta">Srednja škola &middot; 2023 &ndash; 2024 &middot; </span>
+                </div>
+                <div class="card">
+                    <h4>Podgorička gimnazija</h4>
+                    <span class="meta">Srednja škola &middot; 2020 &ndash; 2023</span>
+                </div>
+            </section>
+
+            <section class="two-column">
+                <div>
+                    <h3>Vještine</h3>
+                    <div class="card">
+                        <div class="skills-grid">
+                            <div>
+                                <h4>Programiranje i web</h4>
+                                <div>
+                                    <span class="pill">C#</span>
+                                    <span class="pill">.NET backend</span>
+                                    <span class="pill">Entity Framework</span>
+                                    <span class="pill">Swagger</span>
+                                    <span class="pill">JavaScript</span>
+                                    <span class="pill">Vue.js</span>
+                                    <span class="pill">REST API dizajn</span>
+                                    <span class="pill">HTML / CSS</span>
+                                    <span class="pill">C++</span>
+                                    <span class="pill">PostgreSQL</span>
+                                    <span class="pill">SQL dizajn</span>
+                                    <span class="pill">API dokumentacija</span>
+                                    <span class="pill">Python</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>AI i automatizacija</h4>
+                                <div>
+                                    <span class="pill">ChatGPT API integracije</span>
+                                    <span class="pill">AI asistenti</span>
+                                    <span class="pill">Workflow automatizacija</span>
+                                    <span class="pill">Bot development</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Elektronika i izrada</h4>
+                                <div>
+                                    <span class="pill">Arduino</span>
+                                    <span class="pill">ESP32</span>
+                                    <span class="pill">Senzori</span>
+                                    <span class="pill">IoT prototipovi</span>
+                                    <span class="pill">3D modelovanje</span>
+                                    <span class="pill">Blender</span>
+                                    <span class="pill">Fusion 360</span>
+                                    <span class="pill">3D štampa</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Dodatne vještine</h4>
+                                <div>
+                                    <span class="pill">Vođenje projekata</span>
+                                    <span class="pill">Timski rad</span>
+                                    <span class="pill">Liderstvo</span>
+                                    <span class="pill">Javno nastupanje</span>
+                                    <span class="pill">Kreativno rješavanje problema</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Jezici</h3>
+                    <div class="card">
+                        <p class="body-text"><strong>Crnogorski / Srpski</strong> &mdash; maternji jezik</p>
+                        <p class="body-text"><strong>Ruski</strong> &mdash; maternji jezik</p>
+                        <p class="body-text"><strong>Engleski</strong> &mdash; tečno (pisano i usmeno)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> Nikolaj Kaluderovic &middot; GitHub CV stranica.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
